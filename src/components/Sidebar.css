@@ -1,0 +1,72 @@
+/* src/components/Sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 100vh;
+  background-color: #0b1220;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #e4e4e4;
+  border-right: 1px solid #1f283b;
+  z-index: 100;
+}
+
+.sidebar-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #00ffb0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  color: #cfcfcf;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 6px 0;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background-color: rgba(0, 255, 176, 0.15);
+  color: #00ffb0;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.sidebar-footer {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #1f283b;
+}
+
+.logout-link {
+  color: #ff5b5b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logout-link:hover {
+  color: #ff7676;
+}
