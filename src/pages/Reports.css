@@ -1,0 +1,19 @@
+.reports-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #101820;
+  color: white;
+}
+.sidebar {
+  width: 250px;
+  background: #1f2833;
+  padding: 20px;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+}
+.active {
+  color: #00ffb0;
+  font-weight: bold;
+}

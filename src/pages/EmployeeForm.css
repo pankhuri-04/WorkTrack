@@ -1,0 +1,12 @@
+.form-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #1f2833;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffb0;
+}
+.form-label {
+  color: #00ffb0;
+}

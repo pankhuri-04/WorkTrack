@@ -1,0 +1,129 @@
+/* Global font and layout improvements */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: #1e293b;
+  color: white;
+  min-height: 100vh;
+  padding: 30px 20px;
+  border-top-right-radius: 20px;
+}
+
+.sidebar .logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar li:hover {
+  color: #00ffb0;
+}
+
+.signout {
+  margin-top: 2rem;
+  color: #ff6666;
+  cursor: pointer;
+}
+
+/* Main dashboard area */
+.main-content {
+  padding: 40px;
+  flex: 1;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Cards */
+.stat-card {
+  border: none;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 15px;
+}
+
+.stat-card .icon {
+  font-size: 2rem;
+  color: #00bfa6;
+  margin-bottom: 10px;
+}
+
+/* Table */
+.hire-table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hire-table th,
+.hire-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.hire-table th {
+  background-color: #e2e8f0;
+  font-weight: 600;
+}
+
+.hire-table tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Chart section */
+.chart-section {
+  margin-top: 40px;
+}
+
+/* Employee View */
+.employee-view-container {
+  background-color: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.employee-card {
+  width: 450px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.employee-card h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,40 @@
+.employee-view-container {
+  min-height: 100vh;
+  background-color: #0b0e14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.employee-card {
+  background: #1a1f2e;
+  color: #f8f9fa;
+  border: none;
+  border-radius: 15px;
+  padding: 30px;
+  width: 420px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.employee-card:hover {
+  transform: scale(1.02);
+  background: #23283b;
+}
+
+.employee-card h2 {
+  color: #00ffb0;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.employee-card p {
+  font-size: 1rem;
+  margin: 6px 0;
+}
+
+.employee-card button {
+  border-radius: 10px;
+}
+
