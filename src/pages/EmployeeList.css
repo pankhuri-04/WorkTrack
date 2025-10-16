@@ -1,0 +1,63 @@
+.employee-page {
+  display: flex;
+  gap: 30px;
+  background-color: #0b0e14;
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.employee-list-section {
+  width: 25%;
+  background: #141821;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.employee-list-section h2 {
+  color: #00ffb0;
+  margin-bottom: 15px;
+}
+
+.employee-list li {
+  background: #1a1f2e;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.employee-list li:hover {
+  background: #23283b;
+  color: #00ffb0;
+}
+
+.employee-details-section {
+  flex: 1;
+  background: #141821;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.employee-card {
+  background: #1a1f2e;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.employee-card h2 {
+  color: #00ffb0;
+  margin-bottom: 15px;
+}
+
+.employee-card p {
+  margin: 6px 0;
+}
+
+.chart-section {
+  margin-top: 25px;
+  background: #10131b;
+  border-radius: 12px;
+  padding: 20px;
+}

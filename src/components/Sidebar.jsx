@@ -1,39 +1,38 @@
 import React from "react";
-import { Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { FaHome, FaClipboardList, FaUsers, FaChartBar, FaCog, FaSignOutAlt } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
 import "./Sidebar.css";
 
-const Sidebar = () => {
+function Sidebar() {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // Just a placeholder for now (no backend)
+    alert("Logged out successfully!");
+    navigate("/login");
+  };
+
   return (
     <div className="sidebar">
-      <h2 className="sidebar-logo">Skill Scout</h2>
+      <h2 className="sidebar-title">HR Panel</h2>
+      <ul className="sidebar-menu">
+        <li><Link to="/hrdashboard">Dashboard</Link></li>
+        <li><Link to="/employees">Employees</Link></li>
+        <li><Link to="/reports">Reports</Link></li>
+        <li><Link to="/add-employee">Add Employee</Link></li>
+        <li><Link to="/employees">Task</Link></li>
+        <li><Link to="/resume-parser">AI Resume Parser</Link></li>
 
-      <Nav className="flex-column sidebar-nav">
-        <Nav.Link as={Link} to="/hrdashboard" className="sidebar-link">
-          <FaHome className="sidebar-icon" /> Dashboard
-        </Nav.Link>
-        <Nav.Link as={Link} to="/templates" className="sidebar-link">
-          <FaClipboardList className="sidebar-icon" /> Templates
-        </Nav.Link>
-        <Nav.Link as={Link} to="/hires" className="sidebar-link">
-          <FaUsers className="sidebar-icon" /> Hires List
-        </Nav.Link>
-        <Nav.Link as={Link} to="/analytics" className="sidebar-link">
-          <FaChartBar className="sidebar-icon" /> Analytics
-        </Nav.Link>
-        <Nav.Link as={Link} to="/settings" className="sidebar-link">
-          <FaCog className="sidebar-icon" /> Settings
-        </Nav.Link>
-      </Nav>
+      </ul>
 
+      {/* 🔹 Footer Section */}
       <div className="sidebar-footer">
-        <Nav.Link as={Link} to="/logout" className="logout-link">
-          <FaSignOutAlt className="sidebar-icon" /> Sign Out
-        </Nav.Link>
+        <button className="logout-btn" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
     </div>
   );
-};
+}
 
 export default Sidebar;
+

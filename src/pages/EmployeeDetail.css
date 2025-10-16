@@ -1,0 +1,30 @@
+.employee-detail-container {
+  padding: 20px;
+  color: #fff;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+}
+
+.employee-info-card {
+  background: #242424;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 0 10px rgba(0, 255, 176, 0.4);
+}
+
+.employee-info-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 15px;
+  color: #00ffb0;
+  text-decoration: none;
+  font-weight: bold;
+}
+.back-button:hover {
+  text-decoration: underline;
+}

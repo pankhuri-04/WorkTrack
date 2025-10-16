@@ -1,0 +1,77 @@
+.resume-parser-container {
+  padding: 30px;
+  color: white;
+  background-color: #0b132b;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #00ffb0;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.upload-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.upload-label {
+  display: inline-block;
+  background-color: #1f2a44;
+  color: #00ffb0;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #00ffb0;
+  color: #0b132b;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.parsed-output {
+  background-color: #1f2a44;
+  padding: 25px;
+  border-radius: 12px;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.parsed-output h3 {
+  color: #00ffb0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.parsed-output p {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.skills ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.skills li {
+  background-color: #00ffb0;
+  color: #0b132b;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
