@@ -19,7 +19,7 @@ function Sidebar() {
         <li><Link to="/employees">Employees</Link></li>
         <li><Link to="/reports">Reports</Link></li>
         <li><Link to="/add-employee">Add Employee</Link></li>
-        <li><Link to="/employees">Task</Link></li>
+        <li><Link to="/task">Task</Link></li>
         <li><Link to="/resume-parser">AI Resume Parser</Link></li>
 
       </ul>
